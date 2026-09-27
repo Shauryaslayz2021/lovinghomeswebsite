@@ -349,4 +349,29 @@ input[type='text'] {
   object-fit: cover;
   border-radius: 12px;
   border: 4px solid #c4b5a3;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);}
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+} 
+
+@media(max-width: 768px) {
+  .images.about-us {
+    flex-direction: column;
+  }
+nav {
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.nav-links {
+  flex-direction: column;
+  width: 100%;
+}
+
+.facilities-grid, .images { 
+  grid-template-columns: 1fr;
+ }
+}
+
+.nav-links a:hover { 
+  background-color: #0000ee;
+  color: white important;
+  outline: 2px solid black;
+}
